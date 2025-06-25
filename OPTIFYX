@@ -1,0 +1,31 @@
+  lang-"en >
+body { font-family: Arial, sans-serif; text-align: center; background-color: #fafafa;
+.container { max-width: 4øøpx; margin: 50px auto; padding: 2øpx; background; white; box-shadow: O lepx  1);
+input, button {
+width: løø%; padding: løpx; margin: 5px O;
+button { background-color: #28a745; color: white; border: none; cursor: pointer;
+list-style-type: none; padding: 0;
+li { background: #ddd; padding: løpx; margin: 5px; display: flex;
+Ln 109, Col 2 2605 characters
+margin: 5px; display: flex; justify-content: space-between;
+  initial-scale—I 
+</style>
+< body >
+<div
+a task")
+<script> document. addEventListener( "DC«ontentLoaded", loadTasks);
+function addTask() { const tasklnput = document. const taskList = if (tasklnput. value.trim()
+const taskltem — document. createE1ement("1i"); taskltem.textcontent — tasklnput. value;
+const deleteButton = document. createE1ement("button"); deleteButton. textContent - "Delete" • deleteButton.onclick = function () { taskltem. remove() ; saveTasks();
+taskltem. appendChi Id (deleteButton) ; taskList. appendchild(taskltem) ; saveTasks( :
+ 
+taskltem. appendchi Id(de1eteButton) ; taskList. appendchild(taskltem) ;
+saveTasks(); tasklnput.value — "";
+function saveTasks() { const tasks li") . forEach(task localstorage. setltem("tasks", JSON. stringify(tasks));
+function loadTasks() { const taskList = document const savedTasks — 'SON. "tasks")) I l L];
+savedTasks. forEach(task { const taskltem = document. createE1ement("1i"); taskltem. textContent = task;
+const deleteButton - document.createE1ement("button"); deleteButton. textContent - "Delete" • deleteButton.onc1ick = function () { taskltem. remove() ; saveTasks();
+tas kltem. appendchild( deleteButton ) ; taskL i st. appendchild(taskltem) ;
+</script>
+< / body >
+< / html >
